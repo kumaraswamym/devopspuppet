@@ -44,6 +44,7 @@ node default {
 
 node "marusani2.mylabserver.com" {
 $node_variable = "this is node variable value"
+
 include demo
 include demo::sysusers
 include demo::sysgroups
@@ -52,12 +53,18 @@ include demo::variables
 include demo::rc
 include ntp
 include apache
+include hdemo
 }
 
 
 node /^marusani\d{1}.mylabserver.com$/ {
+include demo
+include demo::sysusers
+include demo::sysgroups
 include ssh
+include demo::variables
 include demo::rc
 include ntp
 include apache
+include hdemo
 }

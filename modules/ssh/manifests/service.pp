@@ -1,4 +1,4 @@
-class ssh::service {
+class ssh::service inherits ssh::params {
 
   service { 'ssh-service':
   name   => $sshname,

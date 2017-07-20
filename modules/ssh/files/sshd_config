@@ -7,7 +7,7 @@
 # OpenSSH is to specify options with their default value where
 # possible, but leave them commented.  Uncommented options change a default value.
 
-#Port 22
+Port 22
 #AddressFamily any
 #ListenAddress 0.0.0.0
 #ListenAddress ::
@@ -31,7 +31,7 @@ ServerKeyBits 1024
 # obsoletes QuietMode and FascistLogging
 #SyslogFacility AUTH
 SyslogFacility AUTHPRIV
-LogLevel INFO
+#LogLevel INFO
 
 # Authentication:
 

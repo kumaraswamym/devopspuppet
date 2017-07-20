@@ -1,4 +1,4 @@
-class ssh inherits ssh::params {
+class ssh {
 package { 'openssh-package':
      name => 'openssh',
      ensure => present,
